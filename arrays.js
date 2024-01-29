@@ -1,29 +1,38 @@
     // step 3:
 const myArray = [];
-    myArray[0] = 0;
-    myArray[1] = 10;
-    myArray[2] = 100;
-    myArray[3] = 1000;
+    myArray[0] = 1;
+    myArray[1] = 2;
+    myArray[2] = 3;
+    myArray[3] = 4;
+    myArray[4] = 5;
+    myArray[5] = 6;
 
     // step 4:
-const funkySingle = function(myArray)
+const funkySingle = function(input)
     {
-        return myArray[0] + 1;
+        input += 1;
+        console.log(input);  
     }
-
-console.log(funkySingle(myArray));
 
     // step 5:
-function funkyDouble(funkySingle, myArray)
+function funkyDouble(expression,number)
     {
-        if (myArray[0] % 2 !== 0) 
-        {
-            return funkySingle(myArray[0]);
+        if (number % 2 == 0) 
+        {   
+            console.log(number);
         } 
-        else 
+        else
         {
-            return "The number is odd";
-        }
+            console.log("The number is odd");
+        }   
     }
 
-console.log(funkyDouble(funkySingle, myArray));
+    // step 6:
+for (let i in myArray) 
+    {
+        let counter = myArray[i];
+        const final = funkyDouble(funkySingle, counter); 
+    }
+
+
+
