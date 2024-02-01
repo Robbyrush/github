@@ -31,7 +31,8 @@ function funkyDouble(expression,number)
 for (let i in myArray) 
     {
         let counter = myArray[i];
-        const final = funkyDouble(funkySingle, counter); 
+        let funkyCall = funkySingle(counter)
+        const final = funkyDouble(funkyCall, counter); 
     }
 
 
