@@ -1,0 +1,31 @@
+@charset "UTF-8";
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+#main_container {
+    display: block;
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    outline: 2px solid gray;
+}
+
+p {
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+#main_button {
+    display: block;
+    margin: auto;
+}
