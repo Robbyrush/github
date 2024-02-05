@@ -33,19 +33,15 @@ p {
 /***** Nav Bar *****/
 
 nav {
-    clear: bottom;
+    clear: both;
     display: block;
-    padding: 0px;
-    margin: 0px;
     width: 100%;
-    
 }
 
 .menubar2 {
     display: block;
     float: left;
     width: 25%;
-    text-align: center;
-    
+    text-align: center; 
 }
 
