@@ -35,16 +35,14 @@ p {
 nav {
     padding: 0px;
     margin: 0px;
-    width: 100%;;
+    width: 100%;
+    clear: bottom;
 }
 
-.menubar, .menubar2 {
+.menubar2 {
     display: block;
     float: left;
-    width: 6%;
+    width: 25%;
     
 }
 
-.menubar {
-    padding-left: 44%;
-}
