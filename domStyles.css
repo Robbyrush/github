@@ -33,7 +33,7 @@ p {
 /***** Nav Bar *****/
 
 nav {
-    clear: both;
+    clear: bottom;
     display: block;
     padding: 0px;
     margin: 0px;
