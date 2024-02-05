@@ -33,10 +33,12 @@ p {
 /***** Nav Bar *****/
 
 nav {
+    display: block;
+    clear: bottom;
     padding: 0px;
     margin: 0px;
     width: 100%;
-    clear: bottom;
+    
 }
 
 .menubar2 {
