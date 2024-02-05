@@ -12,6 +12,7 @@ body {
 
 #main_container {
     display: block;
+    clear: both;
     height: 50px;
     width: 80%;
     margin: auto;
