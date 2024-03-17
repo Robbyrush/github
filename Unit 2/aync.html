@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Async, Await, and Promises</title>
+        <script src="async.js"></script>
+    </head>
+    <body>
+        <h1>Async, Await, and Promises</h1>
+        <h4>In this assignment, we'll explore asynchronous programming:</h4>
+        <ol> 
+            <li>Create a new html document titled "async.html", as well as a JS file titled "async.js" 
+                in the Unit 2 folder of your portfolio repository</li><br>
+            <li>Create a new async function that should do the following:</li><br>
+                <ol type="a">
+                    <li>Create two new variables called runner1 and runner 2, both set to false.</li><br>
+                    <li>Create a loser variable set to an empty string.</li><br>
+                    <li>Create two new promises called runner1Go and runner2Go.</li><br>
+                        <ol type="i">
+                            <li>Each promise should have a resolve parameter.</li><br>
+                            <li> Each promise should also use the setTimeout() method to set a timeout for an anonymous function that<br>
+                                sets the loser value to runner1 in runner1Go, or runner2 in runner2Go, then resolves the value true.</li><br>
+                            <li>You may chose the timeout lengths as long as they are under 10000 (10 seconds).</li><br>
+                        </ol>
+                    <li>Return an array with the following values:</li>
+                        <ol type="i">
+                            <li>The result of runner1Go (you will need to await this)</li><br>
+                            <li>The result of runner2Go (you will also need to await this)</li><br>
+                            <li>The value of loser (this should come last in the array)</li><br>
+                        </ol>
+                </ol>
+            <li>Call the async function from step 2, and use a then clause to run an anonymous function afterwards. The anonymous function 
+                should take one parameter (which will be the return value of the async function). The function should log the loser to the 
+                console. (Hint: This is the last value in the array that you returned from the async function).</li><br>
+            <li>Test your code to ensure that it is working.</li><br>
+            <li>Submit a link to the async.html page as a comment on the assignment in myTech.</li>
+        </ol>
+    </body>
+</html>
