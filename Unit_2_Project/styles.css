@@ -1,0 +1,91 @@
+/* ----- Main Elements ----- */
+
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0%;
+    margin-top: 5%;
+    margin-bottom: 2px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: block;
+    width: 50%;
+    margin: auto;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+ol {
+    font-size: smaller;
+}
+
+/* ----- Elements by ID ----- */
+
+#playerStats, #opponentStats {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 35%;
+    background-color: aquamarine;
+}
+
+#pForm {
+    display: flex;
+}
+
+#moveList {
+    display: Flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width: 25%;
+    background-color: black;
+}
+
+#pName {
+    width: 40%;
+}
+
+/* ----- Elements by class ----- */
+
+.container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+    min-width: 750px;
+    margin: auto;
+    background-color: bisque;
+}
+
+
+
+.movesButtons {
+    width: 60%;
+    height: 25%;
+    font-size: larger;
+    border: 2px solid red;
+    box-sizing: border-box;
+}

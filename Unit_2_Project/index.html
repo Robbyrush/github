@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Author : Robert Hogan
+     Date: 3/24/2024   
+     Description: Unit 2 project submission.
+-->
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2 Project</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <h1>Unit 2 Project</h1>
+    <h3>By: Robert Hogan</h3>
+    <h5>How to begin:</h5>
+    <ol>
+        <li> Enter your name and click Play!</li>
+        <li> Click the ability you wish to use.</li>
+    </ol>
+    <div class="container">
+        <div id="playerStats">
+            <form id="pForm">
+                <label for="pName">Enter a name: </label>
+                <input type="text" id="pName" name="pName">
+                <label id="labelPName" for="btnNewPlayer"></label>
+                <button type="button" id="btnNewPlayer">Play!</button>
+            </form>
+            <p id="pStats"></p>
+        </div>
+        <div id="moveList"> 
+                <button id="btnMovePunch" class="movesButtons">Punch</button>
+                <button id="btnMoveHeal" class="movesButtons">Heal</button>
+        </div>
+        <div id="opponentStats">
+            <p id="oStats"></p>
+        </div>
+    </div>
+</body>
+</html>
