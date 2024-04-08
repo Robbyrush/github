@@ -29,7 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		var splitArray = input.value.split(" ");
 		splitArray.forEach(element => {
-			myArray.push(element);
+			if (element.split() !== "" {
+				myArray.push(element);
+			}
 		});
 		update();
 	}
