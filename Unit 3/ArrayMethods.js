@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		var splitArray = input.value.split(" ");
 		splitArray.forEach(element => {
-			if (element.split() !== "" {
+			if (element.trim() !== "" {
 				myArray.push(element);
 			}
 		});
