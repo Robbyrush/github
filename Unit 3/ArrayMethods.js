@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	var input = document.getElementById("txtInput");
 	var p = document.getElementById("output");
 
+	input.focus();
+
 	// Adds click events to the buttons.
 	document.getElementById("btnPush").addEventListener("click", pushArray);
 	document.getElementById("btnPop").addEventListener("click", popArray);
@@ -21,12 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
 		}, "");
 
 		p.innerHTML = myArrayR;
+		input.value = "";
+		input.focus();
 	}
 
 	function pushArray() 
 	{
-		myArray = [];
-
 		var splitArray = input.value.split(" ");
 		splitArray.forEach(element => {
 			if (element.trim() !== "") {
@@ -50,8 +52,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	function unshiftArray()
 	{
-		myArray.unshift(input.value);
-		update();
+		if (input.value != "") {
+			myArray.unshift(input.value);
+			update();
+		}
 	}
 
 	function arrMap()
